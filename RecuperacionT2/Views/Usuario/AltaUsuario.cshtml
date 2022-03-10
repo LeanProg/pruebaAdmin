@@ -1,0 +1,67 @@
+﻿@model RecuperacionT2.Models.ViewModels.UsuarioAltaViewModel
+@{
+    ViewData["Title"] = "AltaUsuario";
+}
+
+<h1>Alta Usuario</h1>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-2"></div>
+        <div class="col-lg-6 col-md-8 login-box">
+            <div class="col-lg-12 login-key">
+                <i class="fa fa-key" aria-hidden="true"></i>
+            </div>
+            <div class="col-lg-12 login-title">
+                REGISTER
+            </div>
+            @if (Model.ErrorMessage !=null)
+            {
+                <!-- Error Message -->
+                <div class="alert alert-danger" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon-fill" viewBox="0 0 16 16">
+                        <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    @Model.ErrorMessage
+                </div>
+            }
+
+            <div class="col-lg-12 login-form">
+                <div class="col-lg-12 login-form">
+                    <form asp-action="AltaUsuario" asp-controller="Usuario">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="form-group">
+                            <label class="form-control-label">USERNAME</label>
+                            <input asp-for="Nombreusuario" class="form-control"  placeholder="Username"/>
+                            <span asp-validation-for="Nombreusuario" class="text-danger"></span>
+                        </div>
+                      
+                        <div class="form-group">
+                            <label class="form-control-label">PASSWORD</label>
+                            <input asp-for="clave" class="form-control"  placeholder="Password" type="password"/>
+                            <span asp-validation-for="clave" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label">CONFIRM PASSWORD</label>
+                            <input asp-for="Confirm_Password" class="form-control" placeholder="Confirm Password" type="password"/>
+                            <span asp-validation-for="Confirm_Password" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-12 loginbttm">
+                            <div class="col-lg-6 login-btm login-button">
+                                <button type="submit" class="btn btn-outline-primary" title="GUARDAR">GUARDAR</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-2">
+                <div>
+                    <a asp-action="Login" style="text-decoration:none; color:#0DB8DE;">VOLVER ATRAS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

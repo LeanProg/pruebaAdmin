@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecuperacionT2", "RecuperacionT2\RecuperacionT2.csproj", "{114E9FF4-BC0A-41B6-B655-A2CE4136C775}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{114E9FF4-BC0A-41B6-B655-A2CE4136C775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114E9FF4-BC0A-41B6-B655-A2CE4136C775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114E9FF4-BC0A-41B6-B655-A2CE4136C775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114E9FF4-BC0A-41B6-B655-A2CE4136C775}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66B4A5CC-BA86-4D4B-882E-662876CEE306}
+	EndGlobalSection
+EndGlobal
